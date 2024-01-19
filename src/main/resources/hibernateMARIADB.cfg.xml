@@ -1,0 +1,45 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/empleados</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+
+
+        <!-- JDBC connection pool settings ... using built-in test pool -->
+        <property name="hibernate.connection.pool_size">1</property>
+
+
+        <!-- Specify the dialect for MariaDB -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MariaDBDialect</property>
+
+
+        <!-- Echo the SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+
+
+        <!-- Set the current session context -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+
+        <!-- Mention here all the model classes along with their package name -->
+        <mapping class="main.models.Departamento"/>
+        <mapping class="main.models.Empleado"/>
+        <mapping class="main.models.EmpleadoDepartamento"/>
+        <mapping class="main.models.JefeDepartamento"/>
+        <mapping class="main.models.Salario"/>
+        <mapping class="main.models.Titles"/>
+
+
+
+    </session-factory>
+</hibernate-configuration>

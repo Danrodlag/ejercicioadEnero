@@ -1,0 +1,9 @@
+
+^
+java:S1854"BRemove this useless assignment to local variable "sessionFactory".(ÀËªe8¼µ·…Ò1
+O
+java:S1481"3Remove this unused "sessionFactory" local variable.(ÀËªe8Ðµ·…Ò1
+T
+java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8´¶¶…Ò1
+S
+java:S1128"6Remove this unused import 'org.hibernate.Transaction'.(ìÌè³8µ¶¶…Ò1
