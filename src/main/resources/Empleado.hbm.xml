@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="main.models.Empleado" table="empleado">
+        <id name="idEmpleado" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="nombre" type="string"/>
+        <property name="apellido" type="string" column="apellido"/>
+        <property name="fechaNacimiento" type="date" column="fechaNacimiento"/>
+        <property name="fechaIngreso" type="date" column="fechaContratacion"/>
+        <property name="genero" type="org.hibernate.type.EnumType" column="genero"/>
+    </class>
+</hibernate-mapping>

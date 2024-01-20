@@ -50,3 +50,9 @@ w
 G.idea/sonarlint/issuestore/b/7/b7d61301df9ba15d8b0d33a9c67168e42a019227,f\2\f234467ced8b890ba889e6d4bbabffa54da7ae62
 Å
 Q.idea/sonarlint/securityhotspotstore/b/7/b7d61301df9ba15d8b0d33a9c67168e42a019227,8\a\8a69e38b3377c9873bf03c5c942e4316baa9f048
+[
++src/main/java/main/ORM/Departamento.hbm.xml,e\0\e04938b7cc0e70b7db90cf20ce90157241a96185
+w
+G.idea/sonarlint/issuestore/e/0/e04938b7cc0e70b7db90cf20ce90157241a96185,c\5\c59280b7a35f00660d37431459907972fc6e6dff
+Å
+Q.idea/sonarlint/securityhotspotstore/e/0/e04938b7cc0e70b7db90cf20ce90157241a96185,5\a\5a8663495647129a828c436de96b87b7767b0c2f

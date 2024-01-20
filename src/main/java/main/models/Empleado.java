@@ -1,22 +1,26 @@
 package main.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.io.Serializable;
 
 @Entity
-public class Empleado {
+@Table(name = "empleado")
+public class Empleado implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue (strategy = GenerationType.IDENTITY) // autoincremental
     private int idEmpleado;
+    @Column
     private String nombre;
+    @Column
     private String apellido;
+    @Column
     private String genero;
+    @Column
     private Date fechaNacimiento;
+    @Column
     private Date fechaContratacion;
 
     public Empleado() {
@@ -31,59 +35,57 @@ public class Empleado {
         this.fechaContratacion = fechaContratacion;
     }
 
-    public int getIdEmpleado() {
+    public int idEmpleado() {
         return idEmpleado;
     }
 
-    public String getNombre() {
+    public Empleado setIdEmpleado(int idEmpleado) {
+        this.idEmpleado = idEmpleado;
+        return this;
+    }
+
+    public String nombre() {
         return nombre;
     }
 
-    public String getApellido() {
+    public Empleado setNombre(String nombre) {
+        this.nombre = nombre;
+        return this;
+    }
+
+    public String apellido() {
         return apellido;
     }
 
-    public String getGenero() {
+    public Empleado setApellido(String apellido) {
+        this.apellido = apellido;
+        return this;
+    }
+
+    public String genero() {
         return genero;
     }
 
-    public Date getFechaNacimiento() {
+    public Empleado setGenero(String genero) {
+        this.genero = genero;
+        return this;
+    }
+
+    public Date fechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public Date getFechaContratacion() {
+    public Empleado setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+        return this;
+    }
+
+    public Date fechaContratacion() {
         return fechaContratacion;
     }
 
-    public void setIdEmpleado(int idEmpleado) {
-        this.idEmpleado = idEmpleado;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public void setFechaContratacion(Date fechaContratacion) {
+    public Empleado setFechaContratacion(Date fechaContratacion) {
         this.fechaContratacion = fechaContratacion;
+        return this;
     }
-
-    @Override
-    public String toString() {
-        return "Empleado [id=" + idEmpleado + ", nombre=" + nombre + ", apellido=" + apellido + ", genero=" + genero
-                + ", fechaNacimiento=" + fechaNacimiento + ", fechaContratacion=" + fechaContratacion + "]";
-    }
-
-
 }
