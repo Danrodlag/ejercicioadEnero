@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Table(name = "departamento")
 public class Departamento {
     @Id
-    private int idDepartamento;
+    private String idDepartamento;
 
     @Column
     private String nombreDepartamento;
@@ -17,16 +17,16 @@ public class Departamento {
     public Departamento() {
     }
 
-    public Departamento(int idDepartamento, String nombreDepartamento) {
+    public Departamento(String idDepartamento, String nombreDepartamento) {
         this.idDepartamento = idDepartamento;
         this.nombreDepartamento = nombreDepartamento;
     }
 
-    public int getIdDepartamento() {
+    public String getIdDepartamento() {
         return idDepartamento;
     }
 
-    public Departamento setIdDepartamento(int idDepartamento) {
+    public Departamento setIdDepartamento(String idDepartamento) {
         this.idDepartamento = idDepartamento;
         return this;
     }

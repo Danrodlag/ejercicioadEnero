@@ -15,8 +15,6 @@ c
 3src/main/java/main/models/EmpleadoDepartamento.java,3\e\3ec475ed583bd5a50b49e0495d686b200d14debd
 _
 /src/main/java/main/models/JefeDepartamento.java,b\7\b7d61301df9ba15d8b0d33a9c67168e42a019227
-W
-'src/main/java/main/ORM/Empleado.hbm.xml,d\6\d64c346d257d8f3c772cfbe36569b4462a702ac9
 w
 G.idea/sonarlint/issuestore/3/e/3ec475ed583bd5a50b49e0495d686b200d14debd,8\f\8f872fca264ef8ae75ce93ee08053beca960a3c3
 Å
@@ -26,14 +24,10 @@ Q.idea/sonarlint/securityhotspotstore/a/2/a2b4ae165b5812f44ca3984e15535372c2deaa
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-w
-G.idea/sonarlint/issuestore/d/6/d64c346d257d8f3c772cfbe36569b4462a702ac9,6\3\63f43dc9c425e6d01305e954825c32762cabca9a
 Å
 Q.idea/sonarlint/securityhotspotstore/6/6/66f99a6fc8c0f6c6b9f50bf02291975010721807,6\c\6cecca8a5966a3e6b5ccd4d26af441a8353e9f08
 Å
 Q.idea/sonarlint/securityhotspotstore/3/c/3c4b03ca64af32f33549edd2f7f1083826634843,8\2\8259faf0a12cbc70eb2c3c4bb6f244715f734d78
-Å
-Q.idea/sonarlint/securityhotspotstore/d/6/d64c346d257d8f3c772cfbe36569b4462a702ac9,3\5\35f5c9dac804f4754259244a8aee1513cb540ff6
 Å
 Q.idea/sonarlint/securityhotspotstore/4/2/42679fadfed98e9570abf12f65e3babdb15db115,3\8\38bec9fd538b47a5d97cc36eedda4b869208dc0f
 S
@@ -50,9 +44,11 @@ w
 G.idea/sonarlint/issuestore/b/7/b7d61301df9ba15d8b0d33a9c67168e42a019227,f\2\f234467ced8b890ba889e6d4bbabffa54da7ae62
 Å
 Q.idea/sonarlint/securityhotspotstore/b/7/b7d61301df9ba15d8b0d33a9c67168e42a019227,8\a\8a69e38b3377c9873bf03c5c942e4316baa9f048
-[
-+src/main/java/main/ORM/Departamento.hbm.xml,e\0\e04938b7cc0e70b7db90cf20ce90157241a96185
-w
-G.idea/sonarlint/issuestore/e/0/e04938b7cc0e70b7db90cf20ce90157241a96185,c\5\c59280b7a35f00660d37431459907972fc6e6dff
-Å
-Q.idea/sonarlint/securityhotspotstore/e/0/e04938b7cc0e70b7db90cf20ce90157241a96185,5\a\5a8663495647129a828c436de96b87b7767b0c2f
+e
+5src/main/java/main/models/EmpleadoDepartamentoId.java,f\d\fd0d1151364b3551612e49f6d4bcbee22ade2592
+W
+'src/main/java/main/models/TitlesId.java,0\8\08590408d0bdf7a83f7d7f5c264d21440b89c8ff
+X
+(src/main/java/main/models/SalarioId.java,f\9\f9b4d22e4bab558f9371cfc69c388f827c73b90e
+a
+1src/main/java/main/models/JefeDepartamentoId.java,9\b\9b8c4df9294774b8619aadecf82c29d5e4443e0a
